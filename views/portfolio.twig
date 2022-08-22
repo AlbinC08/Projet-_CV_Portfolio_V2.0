@@ -8,7 +8,9 @@
 			{% for project in projects %}
 				<div class="poject-card card col-lg-3 col-sm-6 col-12 mx-auto">
 					<div class='imgContainer'>
-						<img id="img-project" src="/uploads/images/{{project.img}}" class="card-img-top" alt="...">
+						<a title="Voir le projet" href="{{project.project_link}}" class="text-muted"><img id="img-project" src="/uploads/images/{{project.img}}" class="card-img-top" alt="..."></a>
+
+
 					</div>
 					<div class="content">
 						<h2>{{project.title}}</h2>

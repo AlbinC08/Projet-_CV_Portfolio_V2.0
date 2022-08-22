@@ -16,6 +16,10 @@ const projectSchema = new mongoose.Schema({
         type: String,
         required: [true, "pas de link"]
     },
+    project_link: {
+        type: String,
+        required: [true, "pas de project_link"]
+    },
     img: {
         type:String,
         required: [true, "pas d'images"]

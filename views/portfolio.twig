@@ -1,0 +1,26 @@
+{% block potfolio %}
+
+	<h2 id="project">Projets</h2>
+
+	<div id="portfolio" class="container text-center">
+		<div class="row mx-auto">
+
+			{% for project in projects %}
+				<div class="poject-card card col-lg-3 col-sm-6 col-12 mx-auto">
+					<div class='imgContainer'>
+						<img id="img-project" src="/uploads/images/{{project.img}}" class="card-img-top" alt="...">
+					</div>
+					<div class="content">
+						<h2>{{project.title}}</h2>
+						<p>{{project.description}}</p>
+						<div class="card-footer">
+							<a href="{{project.link}}" class="text-muted">{{project.link}}</a>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+
+	</div>
+
+{% endblock %}

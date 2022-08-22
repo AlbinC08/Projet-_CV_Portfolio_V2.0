@@ -1,0 +1,61 @@
+/********about me**********/
+html {
+    width: 100%;
+}
+
+/********about me buttons**********/
+#carouselExampleIndicators {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 300px;
+    align-items: center;
+}
+
+.about-me-button {
+    box-shadow: 0 5px 20px rgb(0 0 0 / 50%);
+    background-color: #2c393c;
+    width: 300px;
+    height: 80px;
+}
+
+.about-me-button:hover {
+    border: 1px solid #e05f2c;
+}
+
+/********about me box**********/
+
+.about_me {
+    color: #e05f2c;
+}
+
+#about-me-left-side {
+    border: 1px solid #e05f2c;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 50%);
+    background-color: #2c393c;
+    width: 800px;
+    height: 400px;
+}
+
+
+.fa-code {
+    color: white;
+    font-size: 100px;
+    margin-top: -30px;
+    color: #e05f2c;
+
+}
+
+
+/******************************responsive***********************************/
+
+
+
+@media screen and (max-width: 650px) {
+
+    #about-me-left-side {
+      
+        height: fit-content;
+    }
+
+}

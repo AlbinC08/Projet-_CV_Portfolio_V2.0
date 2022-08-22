@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Formulaire de Projet</title>
+			{% block stylesheet %}
+
+			{% include "./stylesheet.twig" %}
+			
+		{% endblock %}
+
+
+	</head>
+	<body>
+
+		<main>
+			<h1>Ajout du Projet</h1>
+			<section>
+				{% for error in errors %}
+					<div class="text-danger">
+						{{error.message}}
+					</div>
+				{% endfor %}
+				<form id="form_add_project" enctype="multipart/form-data" action="/addProject" method="post">
+					<div class="mb-3">
+						<input type="text" id="title" name="title" placeholder="Titre">
+					</div>
+					<div class="mb-3">
+						<input type="text" class="form-control" id="description" name="description" placeholder="Description">
+					</div>
+					<div class="mb-3 form-check">
+						<input type="text" class="form-check-input" id="exampleCheck1" name="link" placeholder="Liens vers GitHub">
+					</div>
+					<div class="mb-3 form-check">
+						<input type="file" class="form-check-input" id="image" name="image" placeholder="Ajouter une image">
+					</div>
+					<div id="btn">
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</div>
+				</form>
+			</section>
+
+
+		</main>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	</body>
+</html>

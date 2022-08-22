@@ -1,0 +1,82 @@
+/***************************Portfolio*****************/
+
+#project {
+    padding-top: 100px;
+    text-align: center;
+    color: white;
+    margin-bottom: 100px;
+}
+
+#img-project {
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+
+.portfolio:hover {
+    border: 1px solid #e05f2c;
+}
+
+.portfolio {
+    width: 400px;
+    margin: 40px;
+}
+
+.container .poject-card
+{
+    min-width: 290px;
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 50%);
+    transition: 0.3s ease-in-out;
+}
+.container .poject-card:hover
+{
+    border: 1px solid #e05f2c;
+    height: 450px;
+}
+.container .poject-card .imgContainer
+{
+    position: relative;
+  
+    height:250px;
+    top:-50px;
+   
+    z-index: 1;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 50%);
+}
+.container .poject-card .imgContainer img
+{
+    max-width: 100%;
+    border-radius: 4px;
+}
+.container .poject-card .content
+{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color:#111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.container .poject-card:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+.content h2, .content p {
+    color: white;
+
+}
+
+
+.card-footer {
+    word-break: break-word;
+}

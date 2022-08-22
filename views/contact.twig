@@ -1,0 +1,30 @@
+{% block contact %}
+
+	<div id="form-contact">
+
+		<div id="contact" class="container p-lg-5 p-3 text-center">
+			<h1>Contact</h1>
+			<form method="post" action="/">
+				<label for="fname">Nom & prénom</label>
+				<input type="text" id="yourname" name="yourname" placeholder="Votre nom et prénom">
+
+				<label for="sujet">Sujet</label>
+				<input type="text" id="subject" name="subject" placeholder="L'objet de votre message">
+
+				<label for="emailAddress">Email</label>
+				<input id="email" type="email" name="email" placeholder="Votre email">
+
+
+				<label for="subject">Message</label>
+				<textarea id="message" name="message" placeholder="Votre message" style="height:200px"></textarea>
+
+				<input type="submit" value="Envoyer">
+			</form>
+		</div>
+		<div class="d-flex justify-content-center p-5">
+			<i class="fa-solid fa-phone"></i>
+			<a class="text-decoration-none fs-1 pt-4" href="tel:+33752081798">call me</a>
+		</div>
+	</div>
+
+{% endblock %}

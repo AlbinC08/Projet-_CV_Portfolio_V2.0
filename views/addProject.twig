@@ -5,10 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Formulaire de Projet</title>
-			{% block stylesheet %}
+		{% block stylesheet %}
 
 			{% include "./stylesheet.twig" %}
-			
+
 		{% endblock %}
 
 
@@ -32,6 +32,9 @@
 					</div>
 					<div class="mb-3 form-check">
 						<input type="text" class="form-check-input" id="exampleCheck1" name="link" placeholder="Liens vers GitHub">
+					</div>
+					<div class="mb-3 form-check">
+						<input type="text" class="form-check-input" id="exampleCheck1" name="project_link" placeholder="Liens vers le site">
 					</div>
 					<div class="mb-3 form-check">
 						<input type="file" class="form-check-input" id="image" name="image" placeholder="Ajouter une image">
